@@ -81,17 +81,17 @@ const ContactUs = () => {
               <li className="flex items-center gap-4">
                 <Headphones className="w-6 h-6 text-white" />
                 <span>
-                  Office: <a href="tel:+917768886667">+91 7768886667</a> /{" "}
-                  <a href="tel:+918625870949">8625870949</a>
+                  Office: <a href="tel:+917768886667">+91 9967696475</a> /{" "}
+                  <a href="tel:+918625870949">9967640553</a>
                 </span>
               </li>
 
-              <li className="flex items-center gap-4">
+              {/* <li className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-white" />
                 <span>
                   Mobile: <a href="tel:+918625870949">+91 8625870949</a>
                 </span>
-              </li>
+              </li> */}
 
               <li className="flex items-center gap-4">
                 <Mail className="w-6 h-6 text-white" />
@@ -101,7 +101,7 @@ const ContactUs = () => {
                     href="mailto:raircleanp@gmail.com"
                     className="hover:underline"
                   >
-                    raircleanp@gmail.com
+                    info@vayucleantechnologies.com
                   </a>
                 </span>
               </li>

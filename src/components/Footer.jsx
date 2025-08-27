@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="tel:+919876543210" className="hover:text-primary transition-colors duration-200">
-                  <i className="fas fa-phone-alt mr-2"></i> +91-9876543210 | +91-9123456789
+                  <i className="fas fa-phone-alt mr-2"></i> +91-9967696475 | +91-9967640553
                 </a>
               </li>
               <li>
