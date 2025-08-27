@@ -52,8 +52,8 @@ const Banner = () => {
             download
             className="inline-flex items-center justify-center gap-2 text-primary hover:text-[#009dbb] font-semibold transition duration-200 text-sm sm:text-base"
           >
-            {/* <Download className="w-4 h-4" />
-            Download Catalogue */}
+            <Download className="w-4 h-4" />
+            Download Catalogue
           </a>
         </div>
       </div>

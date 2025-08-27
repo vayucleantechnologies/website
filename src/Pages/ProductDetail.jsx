@@ -104,16 +104,8 @@ const ProductDetail = () => {
           {/* Product Info */}
           <div>
             <SectionTitle className="mb-4">{product.name}</SectionTitle>
-            <div className="text-gray-700 mb-4">
-              {product.description2.map((item, i) =>
-                typeof item === "string" ? (
-                  <p key={i} className="mb-2">{item}</p>
-                ) : (
-                  <p key={i} className="mb-2">
-                    <strong>{item.label}:</strong> {item.value}
-                  </p>
-                )
-              )}
+            <div className="text-gray-700 mb-4 whitespace-pre-line">
+              {product.description2}
             </div>
 
             <p className="text-sm text-gray-500">

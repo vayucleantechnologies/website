@@ -1117,11 +1117,11 @@ export const products = [
     slug: "de-dusting-booth",
     description: "The De-Dusting Booth is designed to remove loose dust particles from materials before storage or processing. Equipped with HEPA filtration, stainless steel body, and efficient blower system, it ensures contamination-free handling with optional roller conveyors and programmable controls.",
     description2: [
-  "The De-Dusting Tunnel/Booth system is used to remove the loose particles/dust present on the receiving materials, which will be brought into the warehousing area before they are transferred into the quarantine area.",
-  "Motorized roller conveyor leads to transfer of heavy load material from material loading to De-Dusting chamber and then finally to material unloading side.",
-  { label: "Material", value: "SS" },
-  { label: "Switch", value: "On/Off switch Digital Differential Pressure Gauge" }
-],
+      "The De-Dusting Tunnel/Booth system is used to remove the loose particles/dust present on the receiving materials, which will be brought into the warehousing area before they are transferred into the quarantine area.",
+      "Motorized roller conveyor leads to transfer of heavy load material from material loading to De-Dusting chamber and then finally to material unloading side.",
+      "Material: SS",
+      "Switch: On/Off switch Digital Differential Pressure Gauge"
+    ],
 
 
     category: "Clean Air & Filtration Equipment",
