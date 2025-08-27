@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'montserrat', sans-serif;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #F5f5f5;
+    color: #272727;
+    background: #ffffff;
+
+    /* overflow-x: hidden; */
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    /* Change to your desired color */
+    opacity: 0.8;
+}
