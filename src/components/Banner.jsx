@@ -45,9 +45,10 @@ const Banner = () => {
         <Description className="text-white mb-5 lg:max-w-2xl mx-auto text-sm md:text-base lg:text-lg">
           Delivering cleanroom solutions engineered for safety, compliance, and efficiency.
         </Description>
-        
+
         <div className="flex justify-center items-center gap-8 max-md:flex-col max-md:gap-4">
           <PrimaryButton to="/categories">Explore Products</PrimaryButton>
+          
           <a
             href="/catalogue.pdf"
             download
