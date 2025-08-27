@@ -48,7 +48,6 @@ const Banner = () => {
 
         <div className="flex justify-center items-center gap-8 max-md:flex-col max-md:gap-4">
           <PrimaryButton to="/categories">Explore Products</PrimaryButton>
-          
           <a
             href="/catalogue.pdf"
             download
