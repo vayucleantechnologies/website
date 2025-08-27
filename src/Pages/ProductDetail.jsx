@@ -198,6 +198,36 @@ const ProductDetail = () => {
               </ul>
             </div>
           )}
+          {/* ✅ Operation Sequence */} 
+          {Array.isArray(product.operation) && product.operation.length > 0 && (
+            <div className="bg-yellow-50 rounded-lg p-6 mt-4">
+              {/* Small Title */}
+              <h6 className="mb-4 text-sm font-semibold text-gray-800">
+               operation Sequence
+              </h6>
+
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
+                {product.operation.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {/* ✅ Capacity Section */} 
+          {Array.isArray(product.capacity) && product.capacity.length > 0 && (
+            <div className="bg-yellow-50 rounded-lg p-6 mt-4">
+              {/* Small Title */}
+              <h6 className="mb-4 text-sm font-semibold text-gray-800">
+               Capacity
+              </h6>
+
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
+                {product.capacity.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </Section>
       )}
     </>

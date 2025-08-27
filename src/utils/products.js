@@ -25,6 +25,9 @@ import {
    bibo_1,bibo_2,ahu_1,ahu_2,bibo_and_ahu_filter_1,bibo_and_ahu_filter_2,
    wet_shower_1,wet_shower_2,wet_shower_3,wet_shower_4,
    Biological_Safety_Cabinet,Bio_Safety_Cabinet_1,Bio_Safety_Cabinet_2,Bio_Safety_Cabinet_3,Bio_Safety_Cabinet_4,
+   Industrial_De_Dusting_Booth_1,Industrial_De_Dusting_Booth_2,
+   Dynamic_Garment_Cabinet_1,Dynamic_Garment_Cabinet_2,
+   Mist_Shower_1,Mist_Shower_2,
   } from "./utils";
 
 export const products = [
@@ -1122,61 +1125,162 @@ export const products = [
       "Material: SS",
       "Switch: On/Off switch Digital Differential Pressure Gauge"
     ],
-
-
     category: "Clean Air & Filtration Equipment",
-    image: ahu_1,
+    image: Industrial_De_Dusting_Booth_1,
     imagesslide: [
-      ahu_1,
-      ahu_2,
+      Industrial_De_Dusting_Booth_1,
+      Industrial_De_Dusting_Booth_2,
     ],
-    listdesc: "AHU Filter Cleaning Equipment",
+    listdesc: "DE-DUSTING BOOTH (MOC SS 304, 316, 316L)",
     list: [
       {
-        "title": "Cleaning Type",
-        "description": "High-pressure water spray & drying system"
+        "title": "Type",
+        "description": "De-Dusting Booth"
       }, 
       {
-        "title": "Washing & Drying",
-        "description": "Separate chamber operation for washing & drying"
+        "title": "MOC",
+        "description": "SS 304 / CRCA Powder coated / double wall PUFF filled panel"
       }, 
       {
-        "title": "Capacity",
-        "description": "Handles AHU filters with micron size range 3µ to 20µ"
+        "title": "SS/PVC roller option",
+        "description": "Vertical brushing system also available"
       }, 
       {
-        "title": "Automation",
-        "description": "PLC-based operation with automatic door closing/opening"
+        "title": "Nozzle Material",
+        "description": "Plastic/Stainless Steel (SS 304) fixed type or adjustable flush type; fitted on either side of walls & ceiling"
       }, 
       {
-        "title": "Drying Method",
-        "description": "High-quality heated air drying system"
+        "title": "High Velocity",
+        "description": "HEPA FILTER Jet system (above 5000 fpm) with manual adjustable direction control"
       }, 
       {
-        "title": "Construction",
-        "description": "Stainless steel frame & corrosion-resistant design"
+        "title": "HEPA Filter",
+        "description": "HEPA Filter H13/H14, efficiency 99.997% down to 0.3 micron"
       }, 
       {
-        "title": "Availability",
-        "description": "Fully automatic / Semi-automatic models"
+        "title": "Door",
+        "description": "PUFF insulated"
       }, 
       {
-        "title": "Customization",
-        "description": "Designed as per client requirements"
+        "title": "Drive Unit",
+        "description": "Multiple industrial chains controlled with in-built motor, varied speeds"
+      }, 
+      {
+        "title": "Lights/Switches",
+        "description": "Fluorescent light & On/Off switches for blower & lights"
+      }, 
+      {
+        "title": "Features",
+        "description": "Air intake fan unit, nozzle with flexible hose, grating flooring, dust collector, collection bin"
+      },
+      {
+        "title": "Power Supply",
+        "description": "3 Phase, 2 HP, 415 V ± 5 V, 50 Hz"
       }, 
     ],
-    features: [
-      "High-quality drying, filter ready to use in AHU",
-      "Compact, durable, and efficient design",
-      "Reduces filter replacement costs",
-      "Ensures consistent cleaning performance",
-      "Available in multiple sizes and capacities",
+    operation: [
+      "Vehicle arrives and docks at receiving bay.",
+      "An operator starts the De-dusting chamber’s blowers first and then Conveyor by pushing the buttons on the push button station.",
+      "Loose material (one at a time) is manually loaded onto the conveyor.",
+      "The material passes through the De-dusting chamber and onto the exit side.",
+      "These are again manually retrieved from the conveyor.",
+      "Belt conveyor moves material with minimal human effort.",
+      "Roller conveyor can lift instant heavy loads with gear box motor.",
+      "Vertical brushing system can also be used for cleaning.",
     ],
-    applications: [   // 👈 New field for extra items
-      "Pharmaceuticals & Biotechnology Industries",
-      "HVAC & Cleanroom Systems",
-      "Hospitals & Laboratories",
-      "Electronic & Semiconductor Units"
+    capacity: [   // 👈 New field for extra items
+      "Manual and automatic operation available.",
+      "Load carrying capacity: 80 kg to 1000 kg.",
+      "HMI / PLC based control system with programmable features.",
+      "Optional: Double door or high-speed rolling shutter."
+    ]
+  },
+  {
+    id: 18,
+    name: "DYNAMIC GARMENT CABINET",
+    slug: "dynamic-garment-cabinet",
+    description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
+    description2: "The application of Garment Cabinet is for storing sterile aprons. The unit is used to avoid dust contamination as well as bacterial growth.It is widely used in Pharmaceuticals, Bio-tech, Food, and Electronic Industries.The work area is continuously supplied with positive pressure HEPA filtered recirculated air flow.",
+    category: "DYNAMIC GARMENT CABINET",
+    image: Dynamic_Garment_Cabinet_1,
+    imagesslide: [
+      Dynamic_Garment_Cabinet_1,
+      Dynamic_Garment_Cabinet_2, 
+    ],
+    listdesc: "DYNAMIC GARMENT CABINET (MOC SS 304, 316, 316L)",
+    list: [
+      {
+        "title": "HEPA Filter",
+        "description": "Imported Minipleat HEPA filter with hot melt technology, conforms to EU-14 Grade.Efficiency rating: better than 99.999% for 0.3 micron."
+      },
+      {
+        "title": "Pre-filter",
+        "description": "Made from Non-woven synthetic with HDPE mesh, conforms to EU-06 Grade, efficiency > 95% down to 5 micron."
+      },
+      {
+        "title": "Fresh Air Filter",
+        "description": "Made from Non-Woven Synthetic with HOPE mesh, conforms to EU-4 Grade.Efficiency rating: better than 90% down to 5 micron."
+      },
+      {
+        "title": "Motor Blower Assembly",
+        "description": "Statistically & dynamically balanced motor blower for uniform airflow."
+      },
+      {
+        "title": "Pressure Gauge",
+        "description": "Magnehelic Gauge (0–25 mm of water). Monitors pressure drop across HEPA filter."
+      },
+      {
+        "title": "Door",
+        "description": "SS 304 doors with double-walled flush toughened glass and SS handles."
+      },
+      {
+        "title": "Interlocking",
+        "description": "Electro-magnetic interlocking arrangement to cut off UV light if either side door opens."
+      },
+      {
+        "title": "Shelves",
+        "description": "SS 304 hanging arrangement or removable type shelves."
+      },
+      {
+        "title": "Temperature Control",
+        "description": "Heater with thermostat for cabinet temperature control."
+      },
+      {
+        "title": "On/Off Switches",
+        "description": "Keypad ON/OFF switches for motor, UV light, and LED light."
+      },
+      {
+        "title": "Switch Socket",
+        "description": "6/15 Amp single-phase socket for external equipment."
+      },
+      {
+        "title": "DOP Port",
+        "description": "DOP test port at upstream of HEPA filter for integrity testing (with PAO solution)."
+      },
+      {
+        "title": "Vibration Level",
+        "description": "Minimum"
+      }, 
+      {
+        "title": "Electrical Supply",
+        "description": "230V AC 1-phase, 50 Hz / 415V AC 3-phase, 50 Hz"
+      }, 
+      {
+        "title": "Noise Level",
+        "description": "Less than 67 dB when ambient is not greater than 55 dB."
+      },      
+    ],
+    optional: [   // 👈 New field for extra items
+      "UV Light with Hour Meter",
+      "Electro-Magnetic / Mechanical Interlocking",
+      "Audio-Visual Alarm",
+      "Clean Down Timer with auto shut-off",
+      "VFD based control system",
+      "Photocell gauge",
+      "Digital pressure gauge",
+      "Flame-proof fitting",
+      "Sodium vapor lamps"
+      
     ]
   },
   
@@ -1220,5 +1324,17 @@ export const categories = [
     description: "The Biological Safety Cabinet Class II Type A2 ensures maximum personnel, product, and environmental protection. It uses HEPA-filtered laminar airflow to minimize cross-contamination and maintain a sterile workspace. Built with stainless steel and toughened glass, it features advanced filtration, low noise operation, and easy-to-clean design. Ideal for laboratories, pharmaceuticals, and research applications.",
     image: Biological_Safety_Cabinet,
     slug: "bio-safety-cabinet",
+  },
+  {
+    name: "DYNAMIC GARMENT CABINET",
+    description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
+    image: Dynamic_Garment_Cabinet_1,
+    slug: "cleanroom-equipment",
+  },
+  {
+    name: "DYNAMIC GARMENT CABINET",
+    description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
+    image: Dynamic_Garment_Cabinet_1,
+    slug: "cleanroom-equipment",
   },
 ];

@@ -66,6 +66,10 @@ import Bio_Safety_Cabinet_3 from "../assets/Bio_Safety_Cabinet_3.png";
 import Bio_Safety_Cabinet_4 from "../assets/Bio_Safety_Cabinet_4.png";
 import Industrial_De_Dusting_Booth_1 from "../assets/Industrial_De_Dusting_Booth_1.png";
 import Industrial_De_Dusting_Booth_2 from "../assets/Industrial_De_Dusting_Booth_2.png";
+import Dynamic_Garment_Cabinet_1 from "../assets/Dynamic_Garment_Cabinet_1.png";
+import Dynamic_Garment_Cabinet_2 from "../assets/Dynamic_Garment_Cabinet_2.png";
+import Mist_Shower_1 from "../assets/Mist_Shower_1.png";
+import Mist_Shower_2 from "../assets/Mist_Shower_2.png";
 
 const HomeHeroBannerImg = [VayuBanner, VayuBanner];
 
@@ -146,4 +150,8 @@ export {
   Bio_Safety_Cabinet_4,
   Industrial_De_Dusting_Booth_1,
   Industrial_De_Dusting_Booth_2,
+  Dynamic_Garment_Cabinet_1,
+  Dynamic_Garment_Cabinet_2,
+  Mist_Shower_1,
+  Mist_Shower_2
 };
