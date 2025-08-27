@@ -1,19 +1,36 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Grid } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/grid";
+
 import { Card1 } from "../utils/utils";
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import Description from "./Description";
 import PrimaryButton from "./PrimaryButton";
 
-Card1;
-
-// ✅ Option 2: If using URLs, you can comment out imports above and use the array below:
 // const logos = [
-//   'https://example.com/logo1.png',
-//   'https://example.com/logo2.png',
-//   'https://example.com/logo3.png',
-//   ...
+  // AFRICURE_PHARMACEUTICALS_INDIA_PVT_LTD,
+  // AKUMS_DRUGS_PHARMACEUTICALS_LTD,AURINKO_HEALTHCARE_PRIVATE_LIMITED,BAROQUE_PHARMACEUTICALS_PVT_LTD,c28,
+  // c42,
+  // c56,
+  // c67,
+  // c69,
+  // CADILA_PHARMACEUTICALS_LTD,
+  // CENTECH_ENGINEERING_GROUP,
+  // CIRON_DRUGS_PHARMACEUTICALS_PVT_LTD,
+  // EAMON_DRUGS_PRIVATE_LIMITED,
+  // Farmson_Basic_Drugs_Pvt_Ltd,
+  // ERAWAT_PHARMA_LIMITED,
+  // FUTURA_HEALTHCARE_REMEDIES_PRIVATE_LIMITED,
+  // HALEWOOD_LABORATORIES_PVT_LTD,
+  // SANCTUS_DRUGS_PHARMACEUTICALS_PVT_LTD,
+  // SILVER_LINE_LABORATORIES,
+  // ULTRA_DRUGS_PVT_LTD,
+  // WAY_2_INNOVATIONS_HEALTHCARE_PVT_LTD,
+  // ZENITH_DRUGS_PVT_LTD, 
 // ];
-
 const logos = [
   Card1,
   Card1,
@@ -38,21 +55,38 @@ const Brands = () => {
         </Description>
       </div>
 
-      {/* Logo Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-10">
+      {/* Swiper Logos with 2 Rows */}
+      <Swiper
+        modules={[Autoplay, Navigation, Grid]}
+        slidesPerView={5} // default desktop
+        grid={{ rows: 2, fill: "row" }}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation
+        breakpoints={{
+          320: { slidesPerView: 2, grid: { rows: 2 } }, // mobile
+          640: { slidesPerView: 3, grid: { rows: 2 } }, // tablet
+          768: { slidesPerView: 4, grid: { rows: 2 } }, // small desktop
+          1024: { slidesPerView: 5, grid: { rows: 2 } }, // large desktop
+        }}
+        className="mb-10"
+      >
         {logos.map((logo, index) => (
-          <div
-            key={index}
-            className="bg-gray rounded-md h-20 flex items-center justify-center p-4"
-          >
-            <img
-              src={logo}
-              alt={`Brand ${index + 1}`}
-              className="max-h-full object-contain"
-            />
-          </div>
+          <SwiperSlide key={index}>
+            <div className="bg-gray-100 rounded-md h-20 flex items-center justify-center p-4">
+              <img
+                src={logo}
+                alt={`Brand ${index + 1}`}
+                className="max-h-full object-contain"
+              />
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
 
       {/* Button */}
       <PrimaryButton to="/coming-soon">Learn More</PrimaryButton>

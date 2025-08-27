@@ -28,6 +28,9 @@ import {
    Industrial_De_Dusting_Booth_1,Industrial_De_Dusting_Booth_2,
    Dynamic_Garment_Cabinet_1,Dynamic_Garment_Cabinet_2,
    Mist_Shower_1,Mist_Shower_2,
+   mobile_trolley_2,mobile_trolley_1,
+   Operating_Room_Laminar_Air_Flow_1,Operating_Room_Laminar_Air_Flow_2,
+   cleanroom_equipment_1,cleanroom_equipment_2,cleanroom_equipment_3,cleanroom_equipment_4,
   } from "./utils";
 
 export const products = [
@@ -1201,7 +1204,7 @@ export const products = [
     slug: "dynamic-garment-cabinet",
     description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
     description2: "The application of Garment Cabinet is for storing sterile aprons. The unit is used to avoid dust contamination as well as bacterial growth.It is widely used in Pharmaceuticals, Bio-tech, Food, and Electronic Industries.The work area is continuously supplied with positive pressure HEPA filtered recirculated air flow.",
-    category: "DYNAMIC GARMENT CABINET",
+    category: "CLEANROOM EQUIPMENT",
     image: Dynamic_Garment_Cabinet_1,
     imagesslide: [
       Dynamic_Garment_Cabinet_1,
@@ -1283,7 +1286,273 @@ export const products = [
       
     ]
   },
-  
+  {
+    id: 19,
+    name: "MIST SHOWER",
+    slug: "mist-shower",
+    description: "Mist Shower is designed for decontamination of clothes in cleanroom and laboratory applications. It sprays a fine mist of air and water to reduce contamination, widely used in pharmaceuticals, biotech, and research facilities.",
+    description2: "The Mist Shower from Quality Clean Equipment is uniquely designed for micro labs and cleanroom applications.Mist Shower is widely used in industries for decontamination of clothes of the userA mixture of air and water is sprayed on the clothes of the users.It comes with a microprocessor or PLC unit to control the whole process.This versatile Mist Shower effectively controls contamination for practical sensitive processes such as pharmaceuticals, drug testing, and research applications involving molecular biology, biochemical experiments, cell and tissue culture experiments etc.",
+    category: "CLEANROOM EQUIPMENT",
+    image: Mist_Shower_1,
+    imagesslide: [
+      Mist_Shower_1,
+      Mist_Shower_2, 
+    ],
+    listdesc: "MIST SHOWER (MOC SS 304, 316, 316L)",
+    list: [
+      {
+        "title": "Type",
+        "description": "Mist Shower"
+      },
+      {
+        "title": "MOC",
+        "description": "SS 304 / SS 316 / Customized"
+      },
+      {
+        "title": "Flow",
+        "description": "From 2 sides"
+      },
+      {
+        "title": "Eloctiyat Nozzle",
+        "description": "25–30 MPS"
+      },
+      {
+        "title": "Air Cleanliness",
+        "description": "ISO Class – 5"
+      },
+      {
+        "title": "HEPA Filter",
+        "description": "Confirms to H 13/H14 with efficiency of 99.997% down to 0.3 micron"
+      },
+      {
+        "title": "Door",
+        "description": "SS 304 double-wall sandwich panel with toughened view glass"
+      },
+      {
+        "title": "Interlocking",
+        "description": "Electro-magnetic interlocking between the doors"
+      },
+      {
+        "title": "Lights / Switches",
+        "description": "Fluorescent light & On/Off switches for blower & lights"
+      },
+      {
+        "title": "Vibration Level",
+        "description": "Minimum"
+      },
+      {
+        "title": "Power Supply",
+        "description": "220–230 V AC / 3-Phase / 50 Hz"
+      },
+
+           
+    ],
+    optional: [   // 👈 New field for extra items
+      "Audio visual alarm (HEPA condition)",
+      "Clean down timer with hold indicator",
+      "VFD based control systems",
+      "PLC control",
+      "For Microelectronics & Semiconductor industries",
+      "Biomedical research",
+      "Life sciences",
+    ],
+    applications: [
+      "Spray painting",
+      "High precision manufacturing processes",
+    ],
+  },
+  {
+    id: 20,
+    name: "MOBILE TROLLEY",
+    slug: "mobile-trolley",
+    description: "Mobile Trolley is designed for safe transport of sterile products in cleanroom environments. Equipped with HEPA filtration, horizontal airflow, and lockable castor wheels, it ensures contamination-free movement of materials in pharmaceuticals, biotech, and research labs.",
+    description2: "Mobile Trolley is designed for transporting sterile products under ISO Class 5 (Class 100) particle-free work area.The work area is continuously supplied with positive pressure HEPA filtered recirculated horizontal airflow.",
+    category: "CLEANROOM EQUIPMENT",
+    image: mobile_trolley_1,
+    imagesslide: [
+      mobile_trolley_1,
+      mobile_trolley_2, 
+    ],
+    listdesc: "MOBILE TROLLEY (MOC SS 304, 316, 316L)",
+    list: [
+      {
+        "title": "HEPA Filter",
+        "description": "Imported Minipleat HEPA filter with hot melt technology, conforms to EU-14 Grade.Efficiency rating: better than 99.999% for 0.3 micron."
+      },
+      {
+        "title": "Return Air Pre-filter",
+        "description": "Made from Non-woven Synthetic with HDPE mesh, conforms to EU-6 Grade.Efficiency rating: better than 95% down to 5 micron."
+      },
+      {
+        "title": "Fresh Air Filter",
+        "description": "Made from Non-woven Synthetic with HOPE mesh, conforms to EU-4 Grade.Efficiency rating: better than 90% down to 10 micron."
+      },
+      {
+        "title": "Motor Blower Assembly",
+        "description": "Statistically and dynamically balanced blower, sufficient capacity to handle HEPA airflow."
+      },
+      {
+        "title": "Pressure Gauge",
+        "description": "Magnehelic Gauge (0–25 mm: 1 Nos.) to monitor pressure drop across HEPA filter."
+      },
+      {
+        "title": "Door",
+        "description": "SS 304 doors with double-walled flush toughened glass view panels and SS handles."
+      },
+      {
+        "title": "Interlocking",
+        "description": "Electro-magnetic interlocking arrangement to cut off UV light if either side door opens (with LED indicator)."
+      },
+      {
+        "title": "Shelves",
+        "description": "SS 304 hanging arrangement or removable shelves."
+      },
+      {
+        "title": "Battery Backup",
+        "description": "Battery backup with inverter for 30 minutes."
+      },
+      {
+        "title": "Castor Wheels",
+        "description": "PU-coated lockable castor wheels."
+      },
+      {
+        "title": "On/Off Switches",
+        "description": "Keypad ON/OFF switches for motor blower, UV, and LED light"
+      },
+      {
+        "title": "Switch Socket",
+        "description": "6/15 Amp single-phase socket for external equipment."
+      },
+      {
+        "title": "DOP Port",
+        "description": "DOP test port at upstream of HEPA filter integrity test (with PAO solution)."
+      },
+      {
+        "title": "Handle",
+        "description": "SS 304 handle for mobility."
+      },
+      {
+        "title": "Electrical Supply",
+        "description": "230V AC 1Ø 50 Hz / 415V AC 3Ø 50 Hz"
+      },
+      {
+        "title": "Noise Level",
+        "description": "Less than 67 dB when ambient is not greater than 55 dB."
+      },
+      {
+        "title": "Vibration Level",
+        "description": "Minimum"
+      },
+      
+     
+    ],
+    optional: [   // 👈 New field for extra items
+      "UV Light with Hour Meter",
+      "Electro-Magnetic / Mechanical Interlocking",
+      "Audio Visual Alarm",
+      "Clean Down Timer with Auto Hold Indicator",
+      "VFD-based control system",
+      "Photocell gauge",
+      "Digital pressure gauge",
+      "Sodium vapor lamps",
+      "Flame-proof fittings"
+    ],
+  },
+  {
+    id: 21,
+    name: "Operating Room Laminar Air Flow (OT LAF) – Med & Tech",
+    slug: "operating-room-laminar-air-flow",
+    description: "Operating Room Laminar Air Flow (OT LAF) provides ultra-clean air at the surgical site, minimizing airborne contamination in operating theatres. With HEPA/ULPA filters and controlled airflow, it ensures a sterile environment for safe surgeries and critical medical procedures.",
+    description2: `The Laminar Air Flow (LAF) System ensures ultra-clean, particle-free air in critical areas like operating theatres and laboratories. Designed with modular construction, high-capacity HEPA/ULPA filters, and precise airflow control, it guarantees contamination-free environments. Customizable to project-specific requirements.`,
+    category: "CLEANROOM EQUIPMENT",
+    image: Operating_Room_Laminar_Air_Flow_1,
+    imagesslide: [
+      Operating_Room_Laminar_Air_Flow_1,
+      Operating_Room_Laminar_Air_Flow_2, 
+    ],
+    listdesc: "Standard Design Characteristics",
+    list: [
+      {
+        title: "Compact Modular Construction",
+        description:
+          "Engineered to minimize ventilation plant capacity while ensuring efficient performance.",
+      },
+      {
+        title: "HEPA Filtration",
+        description:
+          "Minipleat high-capacity filters with 99.99% efficiency on 0.3 μm particles and gel sealing technology.",
+      },
+      {
+        title: "Airflow Distribution",
+        description:
+          "Perforated stainless steel diffuser delivers controlled vertical airflow for sterile zones.",
+      },
+      {
+        title: "Central Duct",
+        description:
+          "Integrated provision for operating theatre light stem to maintain design efficiency.",
+      },
+    ],
+
+    optional: [
+      "120 mm HC Minipleat HEPA filters",
+      "ULPA filters (99.9995% efficiency on 0.12 μm particles)",
+      "Integrated perimeter lighting",
+      "Return air grilles with seamless design",
+      "Differential pressure gauge for filter monitoring",
+      "Fully customized design for specific project needs",
+    ],
+
+    features: [
+      "Ultra-clean air distribution with downward and outward flow",
+      "Maximum of 0.5 bacteria-carrying particles per m³ at filter output",
+      "Less than 10 bacteria-carrying particles per m³ near wound area",
+      "Less than 20 bacteria-carrying particles per m³ at sterile working zone",
+      "Maintains sterility of instruments and prevents wound contamination",
+    ],
+
+    applications: [
+      "Hospital operating theatres",
+      "Microbiology & pharmaceutical labs",
+      "Cleanrooms for medical device assembly",
+      "Research & testing facilities",
+    ],
+  },
+  {
+    id: 22,
+    name: "Cleanroom Area",
+    slug: "cleanroom-area",
+    description: "Cleanroom Area is a contamination-controlled environment equipped with HEPA filtration to eliminate airborne particles. It ensures sterile conditions required in pharmaceuticals, biotechnology, medical devices, and semiconductor manufacturing.",
+    description2: `A Cleanroom is designed to maintain ultra-clean air by controlling particle levels and airflow. Built with modular panels, smooth finishes, and high-efficiency HEPA filters, it supports ISO 1–9 classifications. Cleanrooms ensure regulatory compliance while protecting sensitive processes and sterile operations.`,
+    category: "CLEANROOM EQUIPMENT",
+    image: cleanroom_equipment_1,
+    imagesslide: [
+      cleanroom_equipment_1,
+      cleanroom_equipment_2,
+      cleanroom_equipment_3,
+      cleanroom_equipment_4
+    ],
+    listdesc: "Cleanroom Classification Standards",
+    list: [
+      {
+        title: "ISO 1",
+        description: "Super clean classification with <3,520 particles ≥0.5µm/m³ and 250–300 air changes/hour."
+      },
+      {
+        title: "ISO 2",
+        description: "Very clean environment with <35,200 particles ≥0.5µm/m³ and 180 air changes/hour."
+      },
+      {
+        title: "ISO 3",
+        description: "Common classification with <352,000 particles ≥0.5µm/m³ and 60 air changes/hour."
+      },
+      {
+        title: "ISO 4",
+        description: "Basic cleanroom with <35,200,000 particles ≥0.5µm/m³ and 20 air changes/hour."
+      }
+    ]
+  }
+
 ];
 
 // ✅ Category list separately
@@ -1326,15 +1595,10 @@ export const categories = [
     slug: "bio-safety-cabinet",
   },
   {
-    name: "DYNAMIC GARMENT CABINET",
-    description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
+    name: "CLEANROOM EQUIPMENT",
+    description: "Cleanroom equipment is specially designed to maintain contamination-free environments in industries such as pharmaceuticals, biotechnology, food, and electronics. These systems ensure controlled airflow, dust prevention, and sterile working conditions. From garment storage cabinets to mist showers and air filtration systems, cleanroom solutions help achieve regulatory compliance and protect sensitive processes. Ideal for research labs, manufacturing, and critical production areas.",
     image: Dynamic_Garment_Cabinet_1,
     slug: "cleanroom-equipment",
   },
-  {
-    name: "DYNAMIC GARMENT CABINET",
-    description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
-    image: Dynamic_Garment_Cabinet_1,
-    slug: "cleanroom-equipment",
-  },
+  
 ];

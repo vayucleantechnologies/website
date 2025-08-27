@@ -70,6 +70,66 @@ import Dynamic_Garment_Cabinet_1 from "../assets/Dynamic_Garment_Cabinet_1.png";
 import Dynamic_Garment_Cabinet_2 from "../assets/Dynamic_Garment_Cabinet_2.png";
 import Mist_Shower_1 from "../assets/Mist_Shower_1.png";
 import Mist_Shower_2 from "../assets/Mist_Shower_2.png";
+import mobile_trolley_1 from "../assets/mobile_trolley_1.webp";
+import mobile_trolley_2 from "../assets/mobile_trolley_2.webp";
+import Operating_Room_Laminar_Air_Flow_1 from "../assets/Operating_Room_Laminar_Air_Flow_1.webp";
+import Operating_Room_Laminar_Air_Flow_2 from "../assets/Operating_Room_Laminar_Air_Flow_2.webp";
+import cleanroom_equipment_1 from "../assets/cleanroom_equipment_1.webp";
+import cleanroom_equipment_2 from "../assets/cleanroom_equipment_2.webp";
+import cleanroom_equipment_3 from "../assets/cleanroom_equipment_3.webp";
+import cleanroom_equipment_4 from "../assets/cleanroom_equipment_4.webp";
+
+// import AFRICURE_PHARMACEUTICALS_INDIA_PVT_LTD from "../assets/clients/AFRICURE_PHARMACEUTICALS_INDIA_PVT_LTD.png";
+// import AKUMS_DRUGS_PHARMACEUTICALS_LTD from "../assets/clients/AKUMS_DRUGS_PHARMACEUTICALS_LTD.jpg";
+// import AURINKO_HEALTHCARE_PRIVATE_LIMITED from "../assets/clients/AURINKO_HEALTHCARE_PRIVATE_LIMITED.png";
+// import BAROQUE_PHARMACEUTICALS_PVT_LTD from "../assets/clients/BAROQUE_PHARMACEUTICALS_PVT_LTD.jpg";
+// import c28 from "../assets/clients/c28.png";
+// import c42 from "../assets/clients/c42.png";
+// import c56 from "../assets/clients/c56.jpg";
+// import c67 from "../assets/clients/c67.jpg";
+// import c69 from "../assets/clients/c69.jpg";
+// import CADILA_PHARMACEUTICALS_LTD from "../assets/clients/CADILA_PHARMACEUTICALS_LTD.png";
+// import CENTECH_ENGINEERING_GROUP from "../assets/clients/CENTECH_ENGINEERING_GROUP.jpg";
+// import CIRON_DRUGS_PHARMACEUTICALS_PVT_LTD from "../assets/clients/CIRON_DRUGS_PHARMACEUTICALS_PVT_LTD.jpg";
+// import EAMON_DRUGS_PRIVATE_LIMITED from "../assets/clients/EAMON_DRUGS_PRIVATE_LIMITED.jpg";
+// import ERAWAT_PHARMA_LIMITED from "../assets/clients/ERAWAT_PHARMA_LIMITED.jpg";
+// import Farmson_Basic_Drugs_Pvt_Ltd from "../assets/clients/Farmson_Basic_Drugs_Pvt_Ltd.jpg";
+// import FUTURA_HEALTHCARE_REMEDIES_PRIVATE_LIMITED from "../assets/clients/FUTURA_HEALTHCARE_REMEDIES_PRIVATE_LIMITED.jpg";
+// import HALEWOOD_LABORATORIES_PVT_LTD from "../assets/clients/HALEWOOD_LABORATORIES_PVT_LTD.jpg";
+// import SANCTUS_DRUGS_PHARMACEUTICALS_PVT_LTD from "../assets/clients/SANCTUS_DRUGS_PHARMACEUTICALS_PVT_LTD.png";
+// import SILVER_LINE_LABORATORIES from "../assets/clients/SILVER_LINE_LABORATORIES.png";
+// import ULTRA_DRUGS_PVT_LTD from "../assets/clients/ULTRA_DRUGS_PVT_LTD.jpg";
+// import WAY_2_INNOVATIONS_HEALTHCARE_PVT_LTD from "../assets/clients/WAY_2_INNOVATIONS_HEALTHCARE_PVT_LTD.webp";
+// import ZENITH_DRUGS_PVT_LTD from "../assets/clients/ZENITH_DRUGS_PVT_LTD.png";
+// import client1 from "../assets/clients/client1.jpg";
+// import client2 from "../assets/clients/client2.jpg";
+// import client3 from "../assets/clients/client3.jpg";
+// // import client4 from "../assets/clients/client4.png";
+// // import client5 from "../assets/clients/client5.png";
+// // import client6 from "../assets/clients/client6.png";
+// // import client7 from "../assets/clients/client7.jpg";
+// // import client8 from "../assets/clients/client8.jpg";
+// // import client9 from "../assets/clients/client9.jpg";
+// // import client10 from "../assets/clients/client10.png";
+// // import client11 from "../assets/clients/client11.png";
+// // import client12 from "../assets/clients/client12.png";
+// // import client13 from "../assets/clients/client13.png";
+// // import client14 from "../assets/clients/client14.jpg";
+// // import client15 from "../assets/clients/client15.jpg";
+// // import client16 from "../assets/clients/client16.png";
+// // import client17 from "../assets/clients/client17.png";
+// // import client18 from "../assets/clients/client18.jpg";
+// // import client19 from "../assets/clients/client19.jpg";
+// // import client20 from "../assets/clients/client20.png";
+// // import client21 from "../assets/clients/client21.jpg";
+// // import client22 from "../assets/clients/client22.jpg";
+// // import client23 from "../assets/clients/client23.png";
+// // import client24 from "../assets/clients/client24.jpg";
+// // import client25 from "../assets/clients/client25.jpg";
+// // import client26 from "../assets/clients/client26.jpg";
+// // import client27 from "../assets/clients/client27.jpg";
+// // import client28 from "../assets/clients/client28.jpg";
+
 
 const HomeHeroBannerImg = [VayuBanner, VayuBanner];
 
@@ -153,5 +213,61 @@ export {
   Dynamic_Garment_Cabinet_1,
   Dynamic_Garment_Cabinet_2,
   Mist_Shower_1,
-  Mist_Shower_2
+  Mist_Shower_2,
+  mobile_trolley_1,
+  mobile_trolley_2,
+  Operating_Room_Laminar_Air_Flow_1,
+  Operating_Room_Laminar_Air_Flow_2,
+  cleanroom_equipment_1,
+  cleanroom_equipment_2,
+  cleanroom_equipment_3,
+  cleanroom_equipment_4,
+  // AFRICURE_PHARMACEUTICALS_INDIA_PVT_LTD,
+  // AKUMS_DRUGS_PHARMACEUTICALS_LTD,AURINKO_HEALTHCARE_PRIVATE_LIMITED,BAROQUE_PHARMACEUTICALS_PVT_LTD,
+  // c28,
+  // c42,
+  // c56,
+  // c67,
+  // c69,
+  // CADILA_PHARMACEUTICALS_LTD,
+  // CENTECH_ENGINEERING_GROUP,
+  // CIRON_DRUGS_PHARMACEUTICALS_PVT_LTD,
+  // EAMON_DRUGS_PRIVATE_LIMITED,
+  // Farmson_Basic_Drugs_Pvt_Ltd,
+  // ERAWAT_PHARMA_LIMITED,
+  // FUTURA_HEALTHCARE_REMEDIES_PRIVATE_LIMITED,
+  // HALEWOOD_LABORATORIES_PVT_LTD,
+  // SANCTUS_DRUGS_PHARMACEUTICALS_PVT_LTD,
+  // SILVER_LINE_LABORATORIES,
+  // ULTRA_DRUGS_PVT_LTD,
+  // WAY_2_INNOVATIONS_HEALTHCARE_PVT_LTD,
+  // ZENITH_DRUGS_PVT_LTD,
+  // client1,
+  // client2,
+  // client3,
+  // client4,
+  // client5,
+  // client6,
+  // client7,
+  // client8,
+  // client9,
+  // client10,
+  // client11,
+  // client12,
+  // client13,
+  // client14,
+  // client15,
+  // client16,
+  // client17,
+  // client18,
+  // client9,
+  // client20,
+  // client21,
+  // client22,
+  // client23,
+  // client24,
+  // client25,
+  // client26,
+  // client27,
+  // client28,
 };

@@ -171,6 +171,35 @@ const ContactForm = ({ variant = "light" }) => {
             </span>
           )}
         </div>
+        
+        {/* Company Name */}
+        <div className="input flex flex-col sm:mb-10 mb-5 sm:col-span-2">
+          <label
+            className={`mb-1 ${
+              variant === "dark" ? "text-white" : "text-black"
+            }`}
+          >
+            Company Name*
+          </label>
+          <input
+            {...register("company_name", {
+              required: "This field is required",
+            })}
+            type="text"
+            className={`mb-2 border-b focus:outline-none focus:border-blue-500 
+            ${
+              variant === "dark"
+                ? "bg-transparent text-white border-white placeholder-gray-400"
+                : "bg-transparent text-gray-800 border-gray-300 placeholder-gray-500 "
+            }`}
+          />
+          {errors.company_name && (
+            <span className="text-red-500 text-sm">
+              {errors.company_name.message}
+            </span>
+          )}
+        </div>
+
 
         {/* Message */}
         <div className="input flex flex-col sm:mb-10 mb-5 sm:col-span-2">
