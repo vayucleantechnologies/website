@@ -1,4 +1,5 @@
 // src/pages/ProductDetail.jsx
+import SEO from "../components/SEO";  
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../utils/products";
@@ -13,6 +14,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom"; 
 import { categories } from "../utils/products";
+
+
+
+
 const ProductDetail = () => {
   const { slug } = useParams();
   const product = products.find((item) => item.slug === slug);
@@ -33,7 +38,30 @@ const ProductDetail = () => {
 
   return (
     <>
+      <SEO
+        title={`${product.name} | ${product.category} | VayuClean`}
+        description={product.description}
+        canonical={`https://www.vayucleantechnologies.com/category/${category.slug}/${product.slug}`}
+        jsonLd={{
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          name: product.name,
+          image: product.imagesslide?.length > 0 ? product.imagesslide : [product.image],
+          description: product.description,
+          category: product.category,
+          brand: {
+            "@type": "Brand",
+            name: "VayuClean Technologies"
+          }
+        }}
+      />
+
       <Section className="bg-white md:pt-32 pt-28">
+        <SEO
+          title={`${product.name} | VayuClean Technologies`}
+          description={product.description}
+          canonical={`https://www.vayucleantechnologies.com/category/${category.slug}/${product.slug}`}
+        />
         {/* ✅ Back Button */}
         <div className="mb-6">
             

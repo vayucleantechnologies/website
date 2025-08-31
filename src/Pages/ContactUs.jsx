@@ -1,39 +1,3 @@
-// import React, { useRef } from "react";
-// import { VayuBanner } from "../utils/utils";
-// import Section from "../components/Section";
-// import PrimaryHeading from "../components/PrimaryHeading";
-// import SectionTitle from "../components/SectionTitle";
-// import ContactForm from "../components/ContactForm";
-
-// const ContactUs = () => {
-//   return (
-//     <>
-//       {/* Banner Section */}
-//       <Section
-//         bgImage={VayuBanner}
-//         className="h-screen flex items-center justify-center"
-//       >
-//         <PrimaryHeading className="text-center text-white">
-//           Contact Us
-//         </PrimaryHeading>
-//       </Section>
-
-//       {/* Form Section */}
-//       <Section>
-//         <SectionTitle className="mb-12 md:mb-24 text-center">
-//           Please fill in the form below
-//         </SectionTitle>
-
-//         <div className="form-container md:w-[65%] mx-auto">
-//           <ContactForm variant="light" />
-//         </div>
-//       </Section>
-//     </>
-//   );
-// };
-
-// export default ContactUs;
-
 import React from "react";
 import { VayuBanner } from "../utils/utils";
 import Section from "../components/Section";
@@ -41,10 +5,42 @@ import PrimaryHeading from "../components/PrimaryHeading";
 import SectionTitle from "../components/SectionTitle";
 import ContactForm from "../components/ContactForm";
 import { MapPin, Phone, Mail, Clock, Headphones } from "lucide-react";
+import SEO from "../components/SEO"; 
 
 const ContactUs = () => {
   return (
     <>
+      <SEO
+          title="Contact Us | VayuClean Technologies"
+          description="Get in touch with VayuClean Technologies for inquiries about cleanroom equipment such as Laminar Air Flow, Pass Boxes, Air Showers, and Biosafety Cabinets. Reach us by phone, email, or contact form."
+          keywords="contact VayuClean, cleanroom manufacturer India, laminar air flow inquiry, pass box supplier, biosafety cabinet manufacturer"
+          canonical="https://www.vayucleantechnologies.com/contact"
+          url="https://www.vayucleantechnologies.com/contact"
+          image="https://www.vayucleantechnologies.com/assets/vayulogo-TXXatw3b.svg"
+          jsonLd={{
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "url": "https://www.vayucleantechnologies.com/contact",
+            "about": {
+              "@type": "Organization",
+              "name": "VayuClean Technologies",
+              "url": "https://www.vayucleantechnologies.com",
+              "logo": "https://www.vayucleantechnologies.com/assets/vayulogo-TXXatw3b.svg",
+              "sameAs": [
+                "https://www.facebook.com/vayucleantechnologies",
+                "https://www.linkedin.com/company/vayucleantechnologies",
+                "https://twitter.com/vayucleantechnologies"
+              ]
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9967696475",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          }}
+         />
       {/* Banner Section */}
       <Section
         bgImage={VayuBanner}

@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import React from "react";
 import { Link } from "react-router-dom";
 import Section from "../components/Section";
@@ -10,6 +11,24 @@ import { categories } from "../utils/products";
 const CategoryList = () => {
   return (
     <>
+      <SEO
+        title="Product Categories | VayuClean Technologies"
+        description="Browse cleanroom and pharmaceutical equipment categories including Laminar Air Flow, Air Showers, Pass Boxes, and more from VayuClean."
+        canonical="https://www.vayucleantechnologies.com/categories"
+        jsonLd={{
+          "@context": "https://schema.org/",
+          "@type": "CollectionPage",
+          name: "Product Categories",
+          description: "Browse cleanroom and pharmaceutical equipment categories including Laminar Air Flow, Air Showers, Pass Boxes, and more from VayuClean.",
+          hasPart: categories.map((cat) => ({
+            "@type": "CategoryCodeSet",
+            name: cat.name,
+            url: `https://www.vayucleantechnologies.com/category/${cat.slug}`,
+            description: cat.description
+          }))
+        }}
+      />
+
       <Section
         bgImage={VayuBanner}
         className="bg-white pt-48 h-[100vh] flex items-center justify-start"

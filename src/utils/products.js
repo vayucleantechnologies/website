@@ -31,7 +31,7 @@ import {
    mobile_trolley_2,mobile_trolley_1,
    Operating_Room_Laminar_Air_Flow_1,Operating_Room_Laminar_Air_Flow_2,
    cleanroom_equipment_1,cleanroom_equipment_2,cleanroom_equipment_3,cleanroom_equipment_4,
-  } from "./utils";
+  } from "./utils.js";
 
 export const products = [
   {
@@ -42,6 +42,7 @@ export const products = [
       "Provides a continuous horizontal stream of HEPA-filtered air to protect sensitive samples from contamination. Ideal for microbiology, tissue culture, and electronics assembly.",
     description2: "The Horizontal Laminar Air Flow Workstation is designed for maximum product protection, ensuring a clean ISO Class 5 particle-free work area for handling critical processes.Equipped with a high-performance HEPA filtration system, the workstation delivers a continuous horizontal flow of sterile air across the work surface, preventing contamination from the operator or surrounding environment.Its laminar flow design further eliminates cross-contamination risks, making it ideal for pharmaceutical, biotechnology, and research applications.",
     category: "Laminar Air Flow",
+    categorySlug: "laminar-air-flow",
     image: Horizontal_Lamiar_Air_Flow_cabinet_2,
     imagesslide: [
       Horizontal_Lamiar_Air_Flow_cabinet_2,
@@ -120,6 +121,7 @@ export const products = [
     description: "Delivers sterile air vertically from top to bottom, ensuring product and operator safety in pharmaceutical production and quality testing.",
     description2: "Vertical Laminar Air Flow cabinets are designed for creation of a bacterial dust-free air space. The work area is continuously supplied with positive pressure HEPA filtered vertical air flow and prevents contamination from operator and environment to work area. Air flow cabinets are used for work with low risk substances & material.",
     category: "Laminar Air Flow",
+    categorySlug: "laminar-air-flow",
     image: Vertical_Laminar_Air_Flow_cabine_2,
     imagesslide: [
       Vertical_Laminar_Air_Flow_cabine_1,
@@ -212,6 +214,7 @@ export const products = [
       "Creates a safe, negative-pressure environment by reversing airflow, designed for handling potent powders and preventing cross-contamination.",
     description2: "Booths for product sampling and dispensing are designed as open front containment systems with built-in scavenging arrangements that draw powder aerosol away from the operator and the operating environment.This ensures protection of both product & personnel.",
     category: "Laminar Air Flow",
+    categorySlug: "laminar-air-flow",
     image: RLAF_2,
     imagesslide: [
       RLAF_1,
@@ -299,7 +302,8 @@ export const products = [
     slug: "static-pass-box",
     description: "A Static Pass Box is used for safe material transfer between cleanroom areas without cross-contamination.It reduces personnel movement and maintains product integrity.Equipped with interlocking doors to prevent simultaneous opening.",
     description2: "Our Static Pass Box is designed to prevent cross contamination between different classified areas and to maintain the integrity of products and processes while transferring materials. Static Pass Boxes allow material transfer between cleanrooms without excessive personnel movement,ensuring minimal particulate contamination.",
-    category: "Pass Boxes",
+    category: "Pass Boxesr",
+    categorySlug: "pass-box-static-dynamic",
     image: static_pass_box_2,
     imagesslide: [
       static_pass_box_1,
@@ -344,7 +348,8 @@ export const products = [
     slug: "mechanical-pass-box",
     description: "The Mechanical Pass Box provides contamination-free transfer using a manual interlocking system.It is durable, easy to operate, and prevents both doors from being opened at the same time.Ideal for controlled environments requiring simple mechanical operation",
     description2: "The Mechanical Pass Box is specially designed for material transfer between classified areas where manual mechanical interlocking is preferred.It reduces personnel traffic and prevents cross contamination, ensuring cleanroom integrity.",
-    category: "Pass Boxes",
+    category: "Pass Boxesr",
+    categorySlug: "pass-box-static-dynamic",
     image: Mechanical_Pass_Box2,
     imagesslide: [
       Mechanical_Pass_Box1,
@@ -387,7 +392,8 @@ export const products = [
     slug: "L-type-static-pass-box",
     description: "The L-Type Static Pass Box is designed for corner mounting in cleanrooms to save space.It ensures safe material transfer with electromagnetic interlocking doors.Best suited for compact layouts where efficiency and hygiene are critical.",
     description2: "The L-Type Static Pass Box is designed for corner installation (L-shaped) in cleanrooms.It provides contamination-free material transfer while maximizing space utilization in compact cleanroom layouts.",
-    category: "Pass Boxes",
+    category: "Pass Boxesr",
+    categorySlug: "pass-box-static-dynamic",
     image: L_Type_Static_Pass_Box_1,
     imagesslide: [
       L_Type_Static_Pass_Box_1,
@@ -432,7 +438,8 @@ export const products = [
     slug: "Dynamic-pass-box",
     description: "A Dynamic Pass Box is equipped with HEPA filters to maintain air cleanliness during transfer.It uses continuous airflow to protect materials from contamination.Essential for critical cleanroom applications like pharma and biotech industries.",
     description2: "Our world-class range of Dynamic Pass Boxes is designed in strict conformation with international standards.They are used for transferring materials between classified areas through a controlled environment,ensuring zero cross-contamination and maintaining product & process integrity.",
-    category: "Pass Boxes",
+    category: "Pass Boxesr",
+    categorySlug: "pass-box-static-dynamic",
     image: Dynamic_Pass_Box_1,
     imagesslide: [
       Dynamic_Pass_Box_1,
@@ -522,6 +529,7 @@ export const products = [
     description: "Compact air shower designed for one individual at a time.Ensures effective particle removal with high-velocity air jets.Best for small cleanrooms and laboratories.",
     description2: "Our Single-Person Air Shower is a compact and efficient system designed to decontaminate one individual at a time before entering a cleanroom. It ensures complete particle removal from clothing and skin using high-velocity air jets, maintaining strict contamination control.",
     category: "Air Shower",
+    categorySlug: "air-shower",
     image: single_person_air_sower_1,
     imagesslide: [
       single_person_air_sower_1,
@@ -581,6 +589,7 @@ export const products = [
     description: "Extended air shower tunnel for handling multiple users simultaneously.Provides decontamination from all sides with strong airflow.Ideal for large-scale pharmaceutical or semiconductor facilities.",
     description2: "The Air Shower Tunnel is a protected passageway designed to allow personnel to pass into controlled environments free from surface contaminants. It delivers high-velocity sterile air streams to remove dust and contaminating particles from clothes and skin surfaces as the user stands or walks through the tunnel. These tunnels provide maximum decontamination solutions for particle-sensitive processes and research applications, ensuring high safety and reliability.",
     category: "Air Shower",
+    categorySlug: "air-shower",
     image: air_shower_1,
     imagesslide: [
       air_shower_1,
@@ -661,6 +670,7 @@ export const products = [
     description: "Specially designed for trolleys, equipment, and materials.Removes dust particles before entry into sterile areas.Ensures contamination-free material transfer.",
     description2: "The Material Air Shower is engineered to decontaminate trolleys, equipment, and raw material before entry into clean zones. It prevents contamination transfer into sterile production areas by ensuring thorough dust removal.",
     category: "Air Shower",
+    categorySlug: "air-shower",
     image: Material_Air_Showe_1,
     imagesslide: [
       Material_Air_Showe_1,
@@ -719,6 +729,7 @@ export const products = [
     description: "Built in an L shaped design to save space in cleanrooms.Forces personnel to turn, enhancing exposure to air jets.Ideal where straight passage installation isn’t possible.",
     description2: "The L-Type Air Shower is designed in an L configuration to save cleanroom space. By forcing personnel to turn, it maximizes exposure to high-velocity air jets for better decontamination.",
     category: "Air Shower",
+    categorySlug: "air-shower",
     image: L_Shaped_Air_Shower_1,
     imagesslide: [
       L_Shaped_Air_Shower_1,
@@ -778,6 +789,7 @@ export const products = [
     description: "Heavy-duty version for pallets and bulk materials.Equipped with wider doors and stronger blowers.Ensures contamination-free bulk transfer into clean zones.",
     description2: "The Cargo Air Shower is a heavy-duty chamber designed to decontaminate pallets, bulk materials, and large equipment. With reinforced blowers and wide entry doors, it ensures contamination-free transfer into controlled environments.",
     category: "Air Shower",
+    categorySlug: "air-shower",
     image: Cargo_Air_Shower_1,
     imagesslide: [
       Cargo_Air_Shower_1,
@@ -836,6 +848,7 @@ export const products = [
     description: "Specialized filtration units designed for safe replacement of HEPA/ULPA filters in hazardous environments.Ensures maximum worker safety by preventing exposure to biohazards and viruses.Ideal for cleanrooms, isolation areas, and critical contamination control zones.",
     description2: "Bag in Bag Out (BIBO) Filter Systems are designed to provide the highest level of safety during filter replacement in contaminated environments. They protect operators from biohazardous organisms, viruses, and hazardous particles by ensuring safe filter handling without direct exposure.",
     category: "Clean Air & Filtration Equipment",
+    categorySlug: "clean-air-filtration-equipment",
     image: bibo_1,
     imagesslide: [
       bibo_1,
@@ -884,6 +897,7 @@ export const products = [
     description: "High-efficiency machine for washing, drying, and reconditioning AHU filters.Equipped with multi-chamber systems for thorough cleaning and fast drying.Delivers cost-effective, repeatable performance for cleanroom air handling units.",
     description2: "The AHU Filter Cleaning Machine is a high-performance system for cleaning and drying medium to small-sized AHU filters. It is designed to extend filter life, improve efficiency, and reduce operational costs.",
     category: "Clean Air & Filtration Equipment",
+    categorySlug: "clean-air-filtration-equipment",
     image: ahu_1,
     imagesslide: [
       ahu_1,
@@ -945,6 +959,7 @@ export const products = [
     description: "Wet Shower is a decontamination chamber designed for cleanrooms and laboratories. It sprays a fine mixture of air and water to remove particles from clothing, ensuring contamination control for pharmaceuticals, life sciences, and high-precision industries.",
     description2: "The Wet Shower from Quality Clean Equipment is uniquely designed for micro labs and clean room applications. It is widely used in industries for decontamination of particles from the clothing of users. \n\nA mixture of air and water is sprayed on the user’s clothing. The entire process is controlled by a Microprocessor or PLC unit. \n\nThe Wet Shower is highly effective for controlling contamination in particle-sensitive processes such as pharmaceuticals, drug testing, and research applications involving molecular biology, biochemical experiments, and cell & tissue culture experiments.",
     category: "Wet shower",
+    categorySlug: "wet-shower",
     image: wet_shower_1,
     imagesslide: [
       wet_shower_1,
@@ -1024,6 +1039,7 @@ export const products = [
     description: "The Biological Safety Cabinet Class II Type A2 ensures maximum personnel, product, and environmental protection. It uses HEPA-filtered laminar airflow to minimize cross-contamination and maintain a sterile workspace. Built with stainless steel and toughened glass, it features advanced filtration, low noise operation, and easy-to-clean design. Ideal for laboratories, pharmaceuticals, and research applications.",
     description2: "Biological Safety Cabinet Class II Type A2 provides personnel, environmental, and product protection. Air flow is drawn around the operator into the front grill of the cabinet, which provides personnel protection. In addition, the downward laminar flow of HEPA-filtered air provides product protection by minimizing the chance of cross-contamination along the work surface of the cabinet. Because cabinet air has passed through the exhaust HEPA filter, it is contaminant-free (environmental protection).",
     category: "BIO-SAFETY CABINET",
+    categorySlug: "bio-safety-cabinet",
     image: Bio_Safety_Cabinet_1,
     imagesslide: [
       Bio_Safety_Cabinet_1,
@@ -1129,6 +1145,7 @@ export const products = [
       "Switch: On/Off switch Digital Differential Pressure Gauge"
     ],
     category: "Clean Air & Filtration Equipment",
+    categorySlug: "clean-air-filtration-equipment",
     image: Industrial_De_Dusting_Booth_1,
     imagesslide: [
       Industrial_De_Dusting_Booth_1,
@@ -1205,6 +1222,7 @@ export const products = [
     description: "Dynamic Garment Cabinet is designed for safe storage of sterile aprons, preventing dust contamination and bacterial growth. Widely used in pharmaceuticals, biotech, food, and electronics industries, it ensures positive pressure HEPA-filtered air circulation.",
     description2: "The application of Garment Cabinet is for storing sterile aprons. The unit is used to avoid dust contamination as well as bacterial growth.It is widely used in Pharmaceuticals, Bio-tech, Food, and Electronic Industries.The work area is continuously supplied with positive pressure HEPA filtered recirculated air flow.",
     category: "CLEANROOM EQUIPMENT",
+    categorySlug: "cleanroom-equipment",
     image: Dynamic_Garment_Cabinet_1,
     imagesslide: [
       Dynamic_Garment_Cabinet_1,
@@ -1293,6 +1311,7 @@ export const products = [
     description: "Mist Shower is designed for decontamination of clothes in cleanroom and laboratory applications. It sprays a fine mist of air and water to reduce contamination, widely used in pharmaceuticals, biotech, and research facilities.",
     description2: "The Mist Shower from Quality Clean Equipment is uniquely designed for micro labs and cleanroom applications.Mist Shower is widely used in industries for decontamination of clothes of the userA mixture of air and water is sprayed on the clothes of the users.It comes with a microprocessor or PLC unit to control the whole process.This versatile Mist Shower effectively controls contamination for practical sensitive processes such as pharmaceuticals, drug testing, and research applications involving molecular biology, biochemical experiments, cell and tissue culture experiments etc.",
     category: "CLEANROOM EQUIPMENT",
+    categorySlug: "cleanroom-equipment",
     image: Mist_Shower_1,
     imagesslide: [
       Mist_Shower_1,
@@ -1368,6 +1387,7 @@ export const products = [
     description: "Mobile Trolley is designed for safe transport of sterile products in cleanroom environments. Equipped with HEPA filtration, horizontal airflow, and lockable castor wheels, it ensures contamination-free movement of materials in pharmaceuticals, biotech, and research labs.",
     description2: "Mobile Trolley is designed for transporting sterile products under ISO Class 5 (Class 100) particle-free work area.The work area is continuously supplied with positive pressure HEPA filtered recirculated horizontal airflow.",
     category: "CLEANROOM EQUIPMENT",
+    categorySlug: "cleanroom-equipment",
     image: mobile_trolley_1,
     imagesslide: [
       mobile_trolley_1,
@@ -1465,6 +1485,7 @@ export const products = [
     description: "Operating Room Laminar Air Flow (OT LAF) provides ultra-clean air at the surgical site, minimizing airborne contamination in operating theatres. With HEPA/ULPA filters and controlled airflow, it ensures a sterile environment for safe surgeries and critical medical procedures.",
     description2: `The Laminar Air Flow (LAF) System ensures ultra-clean, particle-free air in critical areas like operating theatres and laboratories. Designed with modular construction, high-capacity HEPA/ULPA filters, and precise airflow control, it guarantees contamination-free environments. Customizable to project-specific requirements.`,
     category: "CLEANROOM EQUIPMENT",
+    categorySlug: "cleanroom-equipment",
     image: Operating_Room_Laminar_Air_Flow_1,
     imagesslide: [
       Operating_Room_Laminar_Air_Flow_1,
@@ -1525,6 +1546,7 @@ export const products = [
     description: "Cleanroom Area is a contamination-controlled environment equipped with HEPA filtration to eliminate airborne particles. It ensures sterile conditions required in pharmaceuticals, biotechnology, medical devices, and semiconductor manufacturing.",
     description2: `A Cleanroom is designed to maintain ultra-clean air by controlling particle levels and airflow. Built with modular panels, smooth finishes, and high-efficiency HEPA filters, it supports ISO 1–9 classifications. Cleanrooms ensure regulatory compliance while protecting sensitive processes and sterile operations.`,
     category: "CLEANROOM EQUIPMENT",
+    categorySlug: "cleanroom-equipment",
     image: cleanroom_equipment_1,
     imagesslide: [
       cleanroom_equipment_1,
@@ -1574,7 +1596,7 @@ export const categories = [
     name: "Wet shower",
     description: "Wet Shower is a decontamination chamber designed for cleanrooms and laboratories. It sprays a fine mixture of air and water to remove particles from clothing, ensuring contamination control for pharmaceuticals, life sciences, and high-precision industries.",
     image: wet_shower_2,
-    slug: "shower",
+    slug: "wet-shower",
   },
   {
     name: "Pass Boxes",

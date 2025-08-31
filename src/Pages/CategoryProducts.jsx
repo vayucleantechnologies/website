@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { categories, products } from "../utils/products";
@@ -22,6 +23,24 @@ const CategoryProducts = () => {
 
   return (
     <>
+      <SEO
+        title={`${category.name} | VayuClean`}
+        description={category.description}
+        canonical={`https://www.vayucleantechnologies.com/category/${category.slug}`}
+        jsonLd={{
+          "@context": "https://schema.org/",
+          "@type": "ItemList",
+          name: category.name,
+          description: category.description,
+          itemListElement: filteredProducts.map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `https://www.vayucleantechnologies.com/category/${category.slug}/${p.slug}`,
+            name: p.name
+          }))
+        }}
+      />
+
       <Section className="lg:pt-32 pt-28">
         {/* ✅ Back Button */}
         <div className="mb-6">
