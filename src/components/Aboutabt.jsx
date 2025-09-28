@@ -9,7 +9,7 @@ const Aboutabt = () => {
   return (
     <>
       {/* Hero Section */}
-      <Section bgImage={VayuBanner} className="h-[95vh] flex items-center">
+      <Section bgImage={VayuBanner} className="h-[70vh] flex items-center">
         <div className="relative z-20 text-white px-6 sm:px-12 lg:max-w-3xl text-center mx-auto pt-20">
           <PrimaryHeading className="mb-6 text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
             Redefining Excellence

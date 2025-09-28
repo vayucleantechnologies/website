@@ -14,6 +14,9 @@ import ContactUs from "./Pages/ContactUs";
 import ComingSoon from "./Pages/ComingSoon";
 import CategoryList from "./Pages/CategoryList";
 import CategoryProducts from "./Pages/CategoryProducts";
+import BlogList from "./Pages/BlogList";
+import BlogDetail from "./Pages/BlogDetail";
+import Gallery from "./Pages/Gallery";
 
 const App = () => {
   const lenis = useLenis(({ scroll }) => {
@@ -38,6 +41,9 @@ const App = () => {
               path="/category/:categorySlug/:slug"
               element={<ProductDetail />}
             />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/blogs" element={<BlogList />} />
+            <Route path="/blogs/:slug" element={<BlogDetail />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/coming-soon" element={<ComingSoon />} />
           </Routes>

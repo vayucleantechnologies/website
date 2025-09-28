@@ -75,7 +75,7 @@ const Cta = () => {
         <span>Phone no.</span>
       </div>
       <p className="text-white text-sm sm:text-base">+91 9967696475</p>
-      <p className="text-white text-sm sm:text-base">+91 9967640968</p>
+      <p className="text-white text-sm sm:text-base">+91 9967640553</p>
     </div>
 
     {/* Email */}
@@ -85,7 +85,7 @@ const Cta = () => {
         <span>E-mail</span>
       </div>
       <p className="text-white text-sm sm:text-base">info@vayucleantechnologies.com</p>
-      <p className="text-white text-sm sm:text-base">Sachin.tiwari@vayumail.com</p>
+      <p className="text-white text-sm sm:text-base">vayucleantechnologies@gmail.com </p>
     </div>
   </div>
 </div>

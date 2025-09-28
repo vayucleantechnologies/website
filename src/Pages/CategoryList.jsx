@@ -31,7 +31,7 @@ const CategoryList = () => {
 
       <Section
         bgImage={VayuBanner}
-        className="bg-white pt-48 h-[100vh] flex items-center justify-start"
+        className="bg-white pt-48 h-[70vh] flex items-center justify-start"
       >
         <div className="md:max-w-2xl mx-auto text-center">
           <PrimaryHeading className="text-white mb-8">

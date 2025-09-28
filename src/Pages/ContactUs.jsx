@@ -44,7 +44,7 @@ const ContactUs = () => {
       {/* Banner Section */}
       <Section
         bgImage={VayuBanner}
-        className="h-screen flex items-center justify-center"
+        className="h-[70vh] flex items-center justify-center"
       >
         <PrimaryHeading className="text-center text-white">
           Contact Us

@@ -8,6 +8,7 @@ import Description from "./Description";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import cataloguePDF from '../assets/doc/VayuClean_Product_Catalogue.pdf';
 
 const Banner = () => {
   return (
@@ -49,12 +50,13 @@ const Banner = () => {
         <div className="flex justify-center items-center gap-8 max-md:flex-col max-md:gap-4">
           <PrimaryButton to="/categories">Explore Products</PrimaryButton>
           <a
-            href="/catalogue.pdf"
-            download
-            className="inline-flex items-center justify-center gap-2 text-primary hover:text-[#009dbb] font-semibold transition duration-200 text-sm sm:text-base"
+            href={cataloguePDF}
+            download="VayuClean_Catalogue.pdf"
+            type="button"
+            className="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-5 py-3 rounded-lg hover:bg-[#009dbb] hover:text-white transition duration-200 text-sm sm:text-base shadow-md hover:shadow-lg"
           >
-            {/* <Download className="w-4 h-4" />
-            Download Catalogue */}
+            <Download className="w-4 h-4" />
+            Download Catalogue
           </a>
         </div>
       </div>

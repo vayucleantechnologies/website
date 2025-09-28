@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react"; // or any icon library
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import VayuLogo from "../assets/vayulogo.svg"; // adjust path as needed
+import VayuLogo from "../assets/Logo_v2.svg"; // adjust path as needed
 import { LogoTwo, NavLinks } from "../utils/utils";
 import PrimaryButton from "./PrimaryButton";
 
