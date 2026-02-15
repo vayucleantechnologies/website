@@ -7,7 +7,7 @@ const ContactPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 5000); // 10 sec
+    }, 20000); // 10 sec
 
     return () => clearTimeout(timer);
   }, []);
