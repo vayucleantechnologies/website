@@ -1,80 +1,148 @@
 import {
   BadgeCheck,
-  Check,
   Headset,
   Lightbulb,
   SquareCheckBig,
 } from "lucide-react";
-import { Customer, Innovation, Quality } from "../utils/utils";
+
 import SectionTitle from "./SectionTitle";
 import Section from "./Section";
 import Description from "./Description";
 
 const Certification = () => {
+
+  // ⭐ ADD ALL FUTURE CERTIFICATES HERE ONLY
+  const certificates = [
+    {
+      name: "ISO 9001:2015",
+      subtitle: "Quality Management System",
+      valid: "Valid till Feb 2029",
+      file: "/certificates/iso-9001-2015.pdf",
+    },
+
+    // FUTURE EXAMPLES (just uncomment later)
+
+    /*
+    {
+      name: "CE Certified",
+      subtitle: "European Conformity",
+      valid: "Valid till 2030",
+      file: "/certificates/ce.pdf",
+    },
+    */
+
+  ];
+
   return (
     <Section>
-      {/* Heading */}
+
+      {/* HEADING */}
       <div className="text-center mb-10">
         <SectionTitle className="mb-3">Our Commitment</SectionTitle>
         <Description>
-          Committed to success through quality and trust.
+          Delivering certified cleanroom solutions with precision engineering,<br />
+          regulatory compliance, and dependable service support.
         </Description>
+        {/* <Description>
+          Committed to success through quality and trust.
+        </Description> */}
       </div>
 
-      {/* Top Feature Grid */}
+
+      {/* TOP FEATURE GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-center mb-12 md:px-24">
-        {/* Card 1 */}
-        <div className="p-8  rounded-xl hover:bg-gray transition">
+
+        <div className="p-8 rounded-xl hover:bg-gray transition">
           <BadgeCheck className="w-16 h-16 mx-auto text-primary" />
-          <h3 className="text-[24px]  py-5 font-medium">Quality Assurance</h3>
-          <p>Every product meets stringent pharmaceutical standards</p>
+          <h3 className="text-[24px] py-5 font-medium">Quality Assurance</h3>
+          <p>Manufactured under ISO-certified processes with strict quality inspection ensuring pharmaceutical-grade reliability and compliance.</p>
+          {/* <p>Every product meets stringent pharmaceutical standards</p> */}
         </div>
 
-        {/* Card 2 */}
         <div className="p-8 rounded-xl hover:bg-gray transition">
           <Lightbulb className="w-16 h-16 mx-auto text-primary" />
           <h3 className="text-[24px] py-5 font-medium">Innovation Focus</h3>
-          <p>Continuous R&amp;D investment in cutting-edge technology</p>
+          <p>Advanced engineering design and continuous R&D enable us to deliver energy-efficient, high-performance cleanroom equipment.</p>
+          {/* <p>Continuous R&amp;D investment in cutting-edge technology</p> */}
         </div>
 
-        {/* Card 3 */}
         <div className="p-8 rounded-xl hover:bg-gray transition">
           <Headset className="w-16 h-16 mx-auto text-primary" />
           <h3 className="text-[24px] py-5 font-medium">Customer Success</h3>
-          <p>24/7 support and comprehensive service programs</p>
+          <p>From consultation to installation and after-sales service, our experts provide complete lifecycle support for every project.</p>
+          {/* <p>24/7 support and comprehensive service programs</p> */}
         </div>
+
       </div>
 
-      {/* <hr className="border-t-2 border-blue-300 max-w-6xl mx-auto mb-12" /> */}
 
-      {/* Certificate Section */}
-      <div className="text-center mb-8 mt-24">
-        <h3 className="text-2xl font-semibold">Certificate and Compliance</h3>
+      {/* CERTIFICATE TITLE */}
+      <div className="text-center mb-10 mt-24">
+        <h3 className="text-2xl font-semibold">
+          Certificate and Compliance
+        </h3>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center ">
-        {/* Cert 1 */}
-        <div className=" bg-gray rounded-lg py-6 px-4 flex flex-col items-center gap-3">
-          <SquareCheckBig className="text-blue-500 w-8 h-8" />
-          <p className="font-medium text-center">
-            ISO 9001:2015 Quality Management
-          </p>
+
+      {/* ⭐ AUTO-CENTER RESPONSIVE CERT GRID */}
+      <div className="flex justify-center">
+
+        <div
+          className="
+            grid gap-6 w-full max-w-5xl
+            grid-cols-[repeat(auto-fit,minmax(260px,1fr))]
+          "
+        >
+
+          {certificates.map((cert, i) => (
+
+            <div
+              key={i}
+              className="bg-gray rounded-xl py-8 px-6 flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition"
+            >
+
+              <SquareCheckBig className="text-blue-500 w-10 h-10" />
+
+              <p className="font-semibold text-lg text-center">
+                {cert.name}
+              </p>
+
+              <p className="text-sm text-gray-600 text-center">
+                {cert.subtitle}
+              </p>
+
+              <p className="text-xs text-gray-500">
+                {cert.valid}
+              </p>
+
+              {/* VIEW */}
+              <a
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 bg-primary text-white px-5 py-2 rounded-lg text-sm hover:opacity-90 transition"
+              >
+                View Certificate
+              </a>
+
+              {/* DOWNLOAD */}
+              <a
+                href={cert.file}
+                download
+                className="text-sm text-primary underline hover:opacity-80"
+              >
+                Download PDF
+              </a>
+
+            </div>
+            
+
+          ))}
+
         </div>
 
-        {/* Cert 2 */}
-        <div className=" bg-gray rounded-lg py-6 px-4 flex flex-col items-center gap-3">
-          <SquareCheckBig className="text-blue-500 w-8 h-8" />
-
-          <p className="font-medium">CE Mark Certified</p>
-        </div>
-
-        {/* Cert 3 */}
-        <div className="bg-gray border-blue-300 rounded-lg py-6 px-4 flex flex-col items-center gap-3">
-          <SquareCheckBig className="text-blue-500 w-8 h-8" />
-
-          <p className="font-medium">21 CFR Part 11</p>
-        </div>
       </div>
+
     </Section>
   );
 };
