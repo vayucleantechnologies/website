@@ -10,6 +10,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import cataloguePDF from '../assets/doc/VayuClean_Product_Catalogue.pdf';
 
+
+
 const Banner = () => {
   return (
     <section className="relative w-full h-[95vh] overflow-hidden text-center flex items-center justify-center">
@@ -64,7 +66,15 @@ const Banner = () => {
       {/* Bottom Info */}
       <div>
         <div className="absolute text-start bottom-6 left-4 sm:left-10 flex flex-col md:flex-row gap-2 sm:gap-6 text-xs sm:text-sm text-primary z-20">
-          <h6>ISO 9001 Certified</h6>
+          <h6>
+            <a 
+              href="/certificates/iso-9001-2015.pdf"
+              download 
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:underline">
+              ISO 9001 Certified
+            </a>
+          </h6>
           <h6>500+ Clients</h6>
           <h6>5+ Years</h6>
         </div>

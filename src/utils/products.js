@@ -302,7 +302,7 @@ export const products = [
     slug: "static-pass-box",
     description: "A Static Pass Box is used for safe material transfer between cleanroom areas without cross-contamination.It reduces personnel movement and maintains product integrity.Equipped with interlocking doors to prevent simultaneous opening.",
     description2: "Our Static Pass Box is designed to prevent cross contamination between different classified areas and to maintain the integrity of products and processes while transferring materials. Static Pass Boxes allow material transfer between cleanrooms without excessive personnel movement,ensuring minimal particulate contamination.",
-    category: "Pass Boxesr",
+    category: "Pass Boxes",
     categorySlug: "pass-box-static-dynamic",
     image: static_pass_box_2,
     imagesslide: [
@@ -348,7 +348,7 @@ export const products = [
     slug: "mechanical-pass-box",
     description: "The Mechanical Pass Box provides contamination-free transfer using a manual interlocking system.It is durable, easy to operate, and prevents both doors from being opened at the same time.Ideal for controlled environments requiring simple mechanical operation",
     description2: "The Mechanical Pass Box is specially designed for material transfer between classified areas where manual mechanical interlocking is preferred.It reduces personnel traffic and prevents cross contamination, ensuring cleanroom integrity.",
-    category: "Pass Boxesr",
+    category: "Pass Boxes",
     categorySlug: "pass-box-static-dynamic",
     image: Mechanical_Pass_Box2,
     imagesslide: [
@@ -392,7 +392,7 @@ export const products = [
     slug: "L-type-static-pass-box",
     description: "The L-Type Static Pass Box is designed for corner mounting in cleanrooms to save space.It ensures safe material transfer with electromagnetic interlocking doors.Best suited for compact layouts where efficiency and hygiene are critical.",
     description2: "The L-Type Static Pass Box is designed for corner installation (L-shaped) in cleanrooms.It provides contamination-free material transfer while maximizing space utilization in compact cleanroom layouts.",
-    category: "Pass Boxesr",
+    category: "Pass Boxes",
     categorySlug: "pass-box-static-dynamic",
     image: L_Type_Static_Pass_Box_1,
     imagesslide: [
@@ -438,7 +438,7 @@ export const products = [
     slug: "Dynamic-pass-box",
     description: "A Dynamic Pass Box is equipped with HEPA filters to maintain air cleanliness during transfer.It uses continuous airflow to protect materials from contamination.Essential for critical cleanroom applications like pharma and biotech industries.",
     description2: "Our world-class range of Dynamic Pass Boxes is designed in strict conformation with international standards.They are used for transferring materials between classified areas through a controlled environment,ensuring zero cross-contamination and maintaining product & process integrity.",
-    category: "Pass Boxesr",
+    category: "Pass Boxes",
     categorySlug: "pass-box-static-dynamic",
     image: Dynamic_Pass_Box_1,
     imagesslide: [
