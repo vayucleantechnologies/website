@@ -17,6 +17,8 @@ import CategoryProducts from "./Pages/CategoryProducts";
 import BlogList from "./Pages/BlogList";
 import BlogDetail from "./Pages/BlogDetail";
 import Gallery from "./Pages/Gallery";
+import ContactPopup from "./components/ContactPopup";
+
 
 const App = () => {
   const lenis = useLenis(({ scroll }) => {
@@ -47,6 +49,8 @@ const App = () => {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/coming-soon" element={<ComingSoon />} />
           </Routes>
+          <ContactPopup />
+
           <Footer />
         </BrowserRouter>
       </ReactLenis>
